@@ -5,13 +5,9 @@ public class Vendeur extends Commercial{
         super(nom, prénom, age, dateEnt, chiffreAffaire);
     }
 
-    @Override
-    public double getChiffreAffaire() {
-        return super.getChiffreAffaire();
-    }
 
     @Override
     public double calculerSalaire() {
-        return getChiffreAffaire()*0.20 + 4000;
+        return super.getChiffreAffaire()*0.20 + 4000;
     }
 }
