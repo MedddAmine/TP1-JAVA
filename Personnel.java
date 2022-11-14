@@ -19,6 +19,6 @@ public class Personnel {
             total=total+e.calculerSalaire();
             nb=nb+1;
         }
-        return total;
+        return total/nb;
     }
 }
